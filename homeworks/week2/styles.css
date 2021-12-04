@@ -1,0 +1,45 @@
+
+.main-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-27%, -50%);
+    width: 100%;
+}
+
+.container {
+    display:inline-block;
+    margin-right: 30px;
+    text-align: center;    
+}
+.product-title {
+    text-align: center;
+}
+.product-description{
+    text-align: center;
+    margin:20px    
+}
+.product-icon-heart{
+    display: inline-block;
+    text-align: center;
+    margin:10px;
+}
+.product-icon-star {
+    display: inline-block;
+    text-align: center;
+    margin:10px;
+}
+
+.buttons-cart{
+    background-color: black;
+    color:white;
+    font-size:1.4em;
+    margin:7.5px;
+    padding:0.3em;
+}
+.buttons-view{
+    padding:0.3em;
+    background-color: white;
+    font-size:1.4em;
+    margin:7.5px;
+}
