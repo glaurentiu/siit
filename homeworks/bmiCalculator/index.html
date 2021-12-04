@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
+    <title>BMI Calculator</title>
+  </head>
+  <body>
+    <h1 class="text-center">BMI Calculator</h1>
+    <body>
+        <div class="text-center container">
+          <p>Calculate Bmi</p>
+      
+          <div>
+          <form id="bmi">
+                <label for="name">Name:</label>
+                <input type="text" id="name"/>
+        </div>
+    </br>
+      
+          <div> 
+            <label for="weight">Weight</label>
+             <input type="text" id="weight"/>
+            </div>
+        </br>
+            <div> 
+          <label for="height">Height</Name</label>
+           <input type="text" id="height"/>
+          </div>
+        </br>
+          <div> 
+            <label for="gender">Gender</label>
+             <select name="gender" id="gender">
+               <option value="Male">male</option>
+              <option value="Female">female</option>
+             <option value="Other">other</option>
+            </select>
+    
+            </div>
+        </br>
+         <button type="button" id="addButton" class="btn btn-primary">Add Person</button>
+         <button type="button" id="delButton" class="btn btn-danger">Delete all the persons!</button>
+         <button type="button" id="calcButton" class="btn btn-success"><strong>CalculateBMI</strong></button>
+         <button type="button" id="sortButton" class="btn btn-primary">Sort by weight</button>
+         <button type="button" id="sortButtonHeight" class="btn btn-success">Sort by height</button>
+        </br></br>
+         <div id="showInfo" class="row"></div>
+        </form>
+        <div>
+            <h2>Results will appear in the table after you add a person</h2>
+            <h4>To check the BMI - please press the Calculate BMI button</h4>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Gender</th>
+                    <th scope="col">Weight</th>
+                    <th scope="col">Height</th>
+                    <th scope="col">BMI</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Edit</th>
+                    <th scope="col">Remove</th>
+
+                  </tr>
+                </thead>
+               
+                <tbody id="myTable">
+                   <!-- to be filled by JavaScript !-->
+                </tbody>
+              </table>
+        </div>
+        </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+    <script src="classes.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
