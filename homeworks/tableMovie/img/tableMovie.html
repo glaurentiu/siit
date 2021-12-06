@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://127.0.0.1:5500/tableMovie/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./tableMovie_files/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--CSS File-->
+    <link rel="stylesheet" href="./tableMovie_files/style.css">
+    <title>tableMovie</title>
+  <script src="chrome-extension://ocggccaacacpienfcgmgcihoombokbbj/pages/client/livestartpage-message-add.js"></script></head>
+  <body>
+      <h1>Table Movie</h1>
+    <!-- Table -->
+    <div class="container">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+        
+          <th scope="col">Character Name</th>
+          <th scope="col">Actor/Actress Name</th>
+          <th scope="col">Image</th>
+          <th scope="col">Year of Birth</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        <tr>
+          
+          <td>Walter O`Brien</td>
+          <td>Elyes Gabel</td>
+          <td><img src="./tableMovie_files/walter.jpeg"></td>
+          <td>1983</td>
+          <td><button type="button" class="btn btn-danger btn">Remove</button></td>
+        </tr><tr>
+          <td>Ary Stidham</td>
+          <td>Sylvestre</td>
+          <td><img src="./tableMovie_files/MV5BZjI2Nzc3NzUtMjMwYy00N2JlLTk3MDktM2Q2MjE2ODEwZTY2XkEyXkFqcGdeQXVyMTc0OTQwMzA@._V1_UY317_CR131,0,214,317_AL_.jpg"></td>
+          <td>1987</td>
+          <td><button type="button" class="btn btn-danger btn">Remove</button></td>
+          </tr><tr>
+          <td>Jadyn Wong</td>
+          <td>Happy Quibnn</td>
+          <td><img src="./tableMovie_files/MV5BZjI2Nzc3NzUtMjMwYy00N2JlLTk3MDktM2Q2MjE2ODEwZTY2XkEyXkFqcGdeQXVyMTc0OTQwMzA@._V1_UY317_CR131,0,214,317_AL_.jpg"></td>
+          <td>1987</td>
+          <td><button type="button" class="btn btn-danger btn">Remove</button></td>
+          </tr><tr>
+          <td>Eddie Kaye Thomas</td>
+          <td>Toby Curtis</td>
+          <td><img src="./tableMovie_files/MV5BMjI0MTk0MDY2N15BMl5BanBnXkFtZTcwMDU1NTQ0NA@@._V1_UX214_CR0,0,214,317_AL_.jpg"></td>
+          <td>1987</td>
+          <td><button type="button" class="btn btn-danger btn">Remove</button></td>
+          </tr><tr>
+          <td>Katharine McPhee</td>
+          <td>Paigee Dineen</td>
+          <td><img src="./tableMovie_files/MV5BMjE2Mjk3OTMyOF5BMl5BanBnXkFtZTcwODUzMjcyNw@@._V1_UY317_CR4,0,214,317_AL_.jpg"></td>
+          <td>1987</td>
+          <td><button type="button" class="btn btn-danger btn">Remove</button></td>
+          </tr><tr>
+          <td>Elyes Gabel</td>
+          <td>Walter O'Brien</td>
+          <td><img src="./tableMovie_files/MV5BNzU4MDU5MDYyOF5BMl5BanBnXkFtZTgwMDU3NjgzMzE@._V1_UX214_CR0,0,214,317_AL_.jpg"></td>
+          <td>1987</td>
+          <td><button type="button" class="btn btn-danger btn">Remove</button></td>
+          </tr>
+      </tbody>
+    </table>
+    <button id="addPerson" type="button" class="btn-primary btn-success btn">Add Person</button>
+    <form id="addPersonForm" action="http://127.0.0.1:5500/tableMovie/index.html" class="add-form add-form-show">
+        <div class="form-group">
+          <label for="characterName">Character Name</label>
+          <input type="text" class="form-control" id="characterName" placeholder="insert the character name">
+        </div>
+        <div class="form-group">
+          <label for="actorName">Actor/Actress Name</label>
+          <input type="text" class="form-control" id="actorName" placeholder="insert the actor name">
+        </div>
+        <div class="form-group">
+          <label for="imageActor">Image Url</label>
+          <input type="text" class="form-control" id="imageActor" placeholder="insert the url of the image">
+        </div>
+        <div class="form-group">
+          <label for="yearOfBirth">Year of Birth</label>
+          <input type="text" class="form-control" id="yearOfBirth" placeholder="ex: 1983">
+        </div>
+      
+      </form>
+</div>
+
+    <!--Bootstrapt required js -->
+    <script src="./tableMovie_files/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="./tableMovie_files/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- jQuery and JS Scripts -->
+    <script src="./tableMovie_files/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./tableMovie_files/script.js"></script>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

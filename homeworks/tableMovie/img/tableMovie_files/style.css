@@ -1,0 +1,25 @@
+img {
+    width: 30%;
+    border-radius:10%;
+}
+h1 {
+    text-align:center;
+}
+
+.container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.add-form {
+
+    display:none;
+}
+
+.add-form-show {
+    margin-top: 30px;
+    text-align: left;
+    display: block;
+}

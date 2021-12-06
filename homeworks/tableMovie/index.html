@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <!--CSS File-->
+    <link rel="stylesheet" href="./style.css" />
+    <title>tableMovie</title>
+  </head>
+  <body>
+      <h1>Table Movie</h1>
+    <!-- Table -->
+    <div class="container">
+    <table class="table table-striped" >
+      <thead>
+        <tr>
+        
+          <th scope="col">Character Name</th>
+          <th scope="col">Actor/Actress Name</th>
+          <th scope="col">Image</th>
+          <th scope="col">Year of Birth</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        <tr>
+          
+          <td>Walter O`Brien</td>
+          <td>Elyes Gabel</td>
+          <td><img src="./img/walter.jpeg" /></td>
+          <td>1983</td>
+          <td><button type="button" class="btn btn-danger btn">Remove</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <button id="addPerson" type="button" class="btn btn-primary btn">Add Person</button>
+    <form id="addPersonForm" action="" class="add-form">
+        <div class="form-group">
+          <label for="characterName">Character Name</label>
+          <input type="text" class="form-control" id="characterName" placeholder="insert the character name">
+        </div>
+        <div class="form-group">
+          <label for="actorName">Actor/Actress Name</label>
+          <input type="text" class="form-control" id="actorName" placeholder="insert the actor name">
+        </div>
+        <div class="form-group">
+          <label for="imageActor">Image Url</label>
+          <input type="text" class="form-control" id="imageActor" placeholder="insert the url of the image">
+        </div>
+        <div class="form-group">
+          <label for="yearOfBirth">Year of Birth</label>
+          <input type="text"class="form-control" id="yearOfBirth" placeholder="ex: 1983">
+        </div>
+      
+      </form>
+</div>
+
+    <!--Bootstrapt required js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jQuery and JS Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>
