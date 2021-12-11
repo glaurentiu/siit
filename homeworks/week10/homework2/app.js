@@ -49,8 +49,7 @@ const app = {
   },
 
   showWeather: (response) => {
-    returnedObject = response;
-    console.log(returnedObject);
+
     let weatherDaily = document.getElementById("weather-daily");
     let weatherHourly = document.getElementById("weather-hourly");
 
