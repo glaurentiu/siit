@@ -65,32 +65,38 @@ const app = {
       }@2x.png" class="card-img-top"/>
             <div class="card-body">
                 <h3 class="card-title">${day.weather[0].main}</h3>
-                <p class="card-text">Max: ${day.temp.max}&deg;C
+                <p class="card-text">Max: ${day.temp.max}&deg;C</p>
                 <p class="card-text">Min: ${day.temp.min}&deg;C</p>
             </div>
         </div>
         </div>`;
     });
+    // Remove the , between the div elements
+    weatherDaily.innerHTML=  weatherDaily.innerHTML.replace(/,/g, ' ')
+
     weatherHourly.innerHTML = response.hourly.map((hour, nrOfHours) => {
       if (nrOfHours <= 10) {
         let imageUrl = "http://openweathermap.org/img/wn/";
         let date = new Date(hour.dt * 1000);
-        return `
-          <div class="col">
-          <div class="card">
-          <h5 class="card-title p-2">${date.toDateString()}</h5>
-              <h5 class="card-title p-2">${date.getHours()}:00</h5>
-              <img src="${imageUrl}${
-          hour.weather[0].icon
-        }@2x.png" class="card-img-top"/>
-              <div class="card-body">
-                  <h3 class="card-title">${hour.weather[0].main}</h3>
-                  <p class="card-text">Temp: ${hour.temp}&deg;C
-              </div>
-          </div>
-          </div>`;
+        return `<div class="col">
+        <div class="card">
+            <h5 class="card-title p-2">${date.toDateString()}</h5>
+            <h5 class="card-title p-2">${date.getHours()}:00</h5>
+            <img src="${imageUrl}${hour.weather[0].icon}@2x.png" class="card-img-top"/>
+                <div class="card-body">
+                        <h3 class="card-title">${hour.weather[0].main}</h3>
+                        <p class="card-text">Temp: ${hour.temp}&deg;C</p>
+                </div>
+        </div>
+    </div>`
+        
+      } else {
+        return;
       }
     });
+    // Remove the , between the div elements
+
+    weatherHourly.innerHTML=  weatherHourly.innerHTML.replace(/,/g, ' ')
   },
 };
 
